@@ -1,0 +1,20 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>  // strcmp 함수를 사용하기 위해 참조
+
+int main(void)
+{
+    string names[4] = {"EMMA", "RODRIGO", "BRIAN", "DAVID"};
+    string numbers[4] = {"555-0100", "555-0101", "515-0001", "555-0103"};
+
+    for (int i=0; i <4; i++)
+    {
+        if(strcmp(names[i], "EMMA") == 0) // strcmp는 두 문자열이 같으면 0을 반환한다
+        {                                 // 앞의 문자열이 크면 양수를 반환 작으면 음수를 반환함
+            printf("%s\n", numbers[i]);
+            return 0; // 프로그램이 문제 없이 종료
+        }
+    }
+    printf("Not found\n");
+    return 1; // 살짝 문제있게 종료
+}
