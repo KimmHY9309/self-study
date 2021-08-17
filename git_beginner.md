@@ -38,3 +38,9 @@
 - branch 는 merge 할 때 사라지는 경우도 있고, 직접 삭제할 경우 git branch -d [branchname] 을 사용한다.
 - master에는 여러 개발자가 작성한 코드들이 합쳐져 있을 것
 - git pull 을 통해 합쳐진 코드들을 가져오고, 다시 branch를 따서 개발을 진행한다 !
+
+#### git 되돌리기
+- git reset [commit] : 선택한 commit으로 되돌린다. 이후 커밋들은 없어지는 것
+- git revert [commit] : 선택한 commit을 없앤다. 선택한 커밋을 취소하는 것이기 때문에 이후 커밋들도 남아있고, 취소하는 커밋이 새로 생성된다.
+- "A + a" A에 a를 추가했을 때, reset은 +a를 하기 전으로 돌아 가는 느낌이고 revert 는 -a를 하는 느낌 
+- 이미 push를 한 상태라면 reset이 의미가 없기 때문에 revert를 한다. 이 후 conflict는 알아서 감당하기..
