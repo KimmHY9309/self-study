@@ -44,3 +44,10 @@
 - git revert [commit] : 선택한 commit을 없앤다. 선택한 커밋을 취소하는 것이기 때문에 이후 커밋들도 남아있고, 취소하는 커밋이 새로 생성된다.
 - "A + a" A에 a를 추가했을 때, reset은 +a를 하기 전으로 돌아 가는 느낌이고 revert 는 -a를 하는 느낌 
 - 이미 push를 한 상태라면 reset이 의미가 없기 때문에 revert를 한다. 이 후 conflict는 알아서 감당하기..
+
+#### 실수로 branch 안 따고 작업했을 때
+- git stash : 변경 내용을 따로 담아두고, 이전 commit으로 돌아간다
+- git stash list : 담아둔 내용을 확인할 수 있다. 0번이 가장 최신
+- git stash pop : 가장 최신 내용을 불러온다.
+- git stash apply : 마찬가지로 불러오지만, list 에도 그대로 남아있다.
+- git drop [num] : 담아둔 내용을 list에서 삭제한다.
