@@ -52,3 +52,12 @@ plt.ylabel('Y-Axis', loc='top')
 plt.yscale('linear')  # 선형적으로 증가
 plt.yscale('log')     # 지수적으로 증가
 ```
+
+#### 여러 그래프 그리기(subplot)
+```
+plt.subplot(2, 1, 1)   # 가로 개수, 세로 개수, 순서 
+plt.plot(...)
+
+plt.subplot(2, 1, 2)
+plt.plot(...)
+```
