@@ -1,5 +1,7 @@
 ## Folium
 - 지도 데이터 시각화
+- https://dailyheumsi.tistory.com/144
+- https://rk1993.tistory.com/entry/Python%EC%A7%80%EB%8F%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-Folium-%EA%B8%B0%EC%B4%88-%EC%8B%A4%EC%8A%B5%ED%95%98%EA%B8%B0
 
 #### 라이브러리 설치
 ```
