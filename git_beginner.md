@@ -51,3 +51,10 @@
 - git stash pop : 가장 최신 내용을 불러온다.
 - git stash apply : 마찬가지로 불러오지만, list 에도 그대로 남아있다.
 - git drop [num] : 담아둔 내용을 list에서 삭제한다.
+
+#### 실수로 merge 했을 때 되돌리기
+- develope branch에 merge 하려고 한 것을 실수로 master branch에 merge 했다
+- 다른 사람이 pull을 하지 않았기 때문에 내 master에 내 commit만 없애면 되는 상황
+- 로컬에 있는 master branch는 아직 pull을 하지 않았으므로 병합 전의 상태이다. 이 barnch를 원격 저장소에 덮어 씌운다
+- git push -f origin master
+- 옵션을 추가해 강제로 A + a -> A 로 변경
