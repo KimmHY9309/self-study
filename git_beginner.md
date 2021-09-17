@@ -39,7 +39,7 @@
 - master에는 여러 개발자가 작성한 코드들이 합쳐져 있을 것
 - git pull 을 통해 합쳐진 코드들을 가져오고, 다시 branch를 따서 개발을 진행한다 !
 
-#### git 되돌리기
+## git 되돌리기
 - git reset [commit] : 선택한 commit으로 되돌린다. 이후 커밋들은 없어지는 것
 - git revert [commit] : 선택한 commit을 없앤다. 선택한 커밋을 취소하는 것이기 때문에 이후 커밋들도 남아있고, 취소하는 커밋이 새로 생성된다.
 - "A + a" A에 a를 추가했을 때, reset은 +a를 하기 전으로 돌아 가는 느낌이고 revert 는 -a를 하는 느낌 
@@ -58,3 +58,10 @@
 - 로컬에 있는 master branch는 아직 pull을 하지 않았으므로 병합 전의 상태이다. 이 barnch를 원격 저장소에 덮어 씌운다
 - git push -f origin master
 - 옵션을 추가해 강제로 A + a -> A 로 변경
+
+## git remote 추가하기
+- 여러 원격 저장소를 등록하고 각각에 push 한다
+- git remote add [name] [https://~]
+- name의 기본값은 origin
+- push할 때 git push [name] [branch] 해서 name 만 바꾸면 여러 원격 저장소에 push 가능
+- global로 email, password 설정한 경우 email이 동일해야 push 가능
