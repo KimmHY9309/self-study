@@ -50,7 +50,7 @@
 - git stash list : 담아둔 내용을 확인할 수 있다. 0번이 가장 최신
 - git stash pop : 가장 최신 내용을 불러온다.
 - git stash apply : 마찬가지로 불러오지만, list 에도 그대로 남아있다.
-- git drop [num] : 담아둔 내용을 list에서 삭제한다.
+- git stash drop [num] : 담아둔 내용을 list에서 삭제한다.
 
 #### 실수로 merge 했을 때 되돌리기
 - develope branch에 merge 하려고 한 것을 실수로 master branch에 merge 했다
