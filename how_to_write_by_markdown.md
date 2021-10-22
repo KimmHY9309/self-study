@@ -250,6 +250,18 @@ __double underscores__
 * 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.    \
 이렇게
 
+## 2.10. 표 만들기
+```
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+```
+
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
 
 ****
 
@@ -262,3 +274,4 @@ __double underscores__
 * Atom(<https://atom.io/>)
 * Visual Studio Code(<https://code.visualstudio.com/>)
 * Notepad++(<https://notepad-plus-plus.org/>)
+* https://inasie.github.io/it%EC%9D%BC%EB%B0%98/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/
